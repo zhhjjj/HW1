@@ -1,1 +1,41 @@
+import bisect
+nums = list(range(30, 61, 5))
+print(nums)
 
+nums.sort(reverse=True)
+print(nums)
+
+nums.insert(60, 65)
+nums.sort(reverse=True)
+print(nums)
+
+
+
+nums = list()
+print(nums)
+nums.extend([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
+print(nums)
+nums.remove(0)
+print(nums)
+
+print(len(nums))
+
+print(min(nums))
+
+print(max(nums))
+
+sum(nums)
+
+
+
+weathers = {"sunny": "play", "rainy": "watch TV", "cloudy": "walk"}
+print(weathers)
+
+for weather, actions in weathers.items():
+    print("When", weather, "let us", actions)
+    
+weathers.update({"snowy":"ski"})
+print(weathers)
+
+for weather, actions in weathers.items():
+    print("When", weather, "let us", actions)
